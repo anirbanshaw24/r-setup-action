@@ -1,7 +1,7 @@
 name: setup-workflow
-description: "Setup R"
+description: 'Setup R'
 runs:
-  using: "composite"
+  using: 'composite'
   name: Setup dependencies
   runs-on: ubuntu-22.04
   steps:
