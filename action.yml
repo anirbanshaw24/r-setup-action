@@ -1,12 +1,11 @@
 name: setup-workflow
 permissions:
   contents: read
-jobs:
-  main:
-    name: Setup dependencies
-    runs-on: ubuntu-22.04
-    using: "composite"
-    steps:
+runs:
+  using: "composite"
+  name: Setup dependencies
+  runs-on: ubuntu-22.04
+  steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
