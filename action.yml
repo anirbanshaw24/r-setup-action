@@ -2,13 +2,12 @@ name: setup-workflow
 description: 'Setup R'
 runs:
   using: 'composite'
-  name: Setup dependencies
-  runs-on: ubuntu-22.04
   steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Setup system dependencies
+        shell: bash
         run: |
           packages=(
             libharfbuzz-dev
