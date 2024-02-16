@@ -1,6 +1,5 @@
 name: setup-workflow
-permissions:
-  contents: read
+description: "Setup R"
 runs:
   using: "composite"
   name: Setup dependencies
